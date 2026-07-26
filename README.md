@@ -38,17 +38,17 @@ pip install requests pandas scikit-learn streamlit
 ### 2. Run the Historical Ingestion Pipeline
 Download the historical archive data blocks to generate your local dataset:
 ```
-python pipeline.py
+python pipeline.ipynb
 ```
 ### 3. Train and Validate the AI Model
 Train the Random Forest architecture and serialize the fitted blueprint file:
 ```
-python train_and_save.py
+python model.ipynb
 ```
 ### 4. Fetch the Active 2026 Live Forecast
 Pull the current week's telemetry streams and run the hourly-to-daily time resampling engine:
 ```
-python live_pipeline.py
+python live_pipeline.ipynb
 ```
 ### 5. Launch the Humanitarian Mission Control Dashboard
 Deploy the interactive Streamlit user environment locally:
